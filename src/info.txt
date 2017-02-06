@@ -5,4 +5,4 @@ enfant2 appel routing passage donnees via data (readonly)
 enfant3 appel routing passage donnees via param (dans url);
 enfant4 appel routing passage donnees
 
-enfant4 appel routing passage donnees via service obbservable
+enfant5 appel routing passage donnees via service obbservable
