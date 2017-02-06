@@ -12,6 +12,8 @@ import { Enfant2Component } from './enfant2/enfant2.component';
 import { Enfant3Component } from './enfant3/enfant3.component';
 import { PetitEnfant1Component } from './petit-enfant1/petit-enfant1.component';
 import { Enfant4Component } from './enfant4/enfant4.component';
+import { Enfant5Component } from './enfant5/enfant5.component';
+import {conferenceService} from "./services/conferencesService";
 
 /*TODO mettre dans dans route.ts*/
 const appRoutes: Routes = [
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
   },
   { path: 'enfant3', component: Enfant3Component },
   { path: 'enfant4', component: Enfant4Component },
+  { path: 'enfant5', component: Enfant5Component },
   { path: '**', component: Enfant1Component }
 ];
 /*TODO FIN   */
@@ -41,7 +44,8 @@ const appRoutes: Routes = [
     Enfant2Component,
     Enfant3Component,
     PetitEnfant1Component,
-    Enfant4Component
+    Enfant4Component,
+    Enfant5Component
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [conferenceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

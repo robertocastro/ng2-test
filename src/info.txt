@@ -1,0 +1,8 @@
+enfant1 appel routing donnees chargees dans le component
+(petit enfant todo passage via input);
+
+enfant2 appel routing passage donnees via data (readonly)
+enfant3 appel routing passage donnees via param (dans url);
+enfant4 appel routing passage donnees
+
+enfant4 appel routing passage donnees via service obbservable
