@@ -11,12 +11,12 @@ export class AppComponent {
   title = 'app works!';
 
   parent:string = 'infoParent';
-/*
-  confs:any[] = [
+
+  confsParent:any[] = [
     {id:1,
     name:'test'}
   ];
-*/
+
 
   ngOnInit() {
   /*  setTimeout(() => {

@@ -12,9 +12,9 @@ export class Enfant4Component implements OnInit {
   constructor(public route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.test = this.route.snapshot.params;
+    this.test = this.route.snapshot.params[0];
     console.log(this.route.snapshot.params);
-    console.log(this.route.snapshot.data);
+    console.log(this.route.snapshot.params[0]);
   }
 
 }

@@ -8,7 +8,7 @@
   <a routerLink="/enfant1" routerLinkActive="active">enfant1</a>
   <a routerLink="/enfant2" routerLinkActive="active">enfant2</a>
   <a [routerLink]="['/enfant3', { id: 2 }]">enfant3</a>
-  <a [routerLink]="['/enfant4', { confs: confs }]">enfant4</a>
+  <a [routerLink]="['/enfant4', { confs: confsParent }]">enfant4</a>
 </nav>
 
 <router-outlet></router-outlet>
