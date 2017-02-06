@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import {stringDistance} from "codelyzer/util/utils";
 import {setTimeout} from "timers";
 import {conferenceService} from "./services/conferencesService";
+import {NavigationExtras, Router} from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,7 @@ export class AppComponent {
   ];
 
 
-  constructor(public confService: conferenceService) { }
+  constructor(public confService: conferenceService, public router:Router) { }
 
   ngOnInit() {
 
@@ -53,6 +54,15 @@ export class AppComponent {
     }, 2000);
   }
 
+  public onTap() {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        "id": "5",
+        "name": "testAppcomponent5"
+      }
+    };
+    this.router.navigate(["page2"], navigationExtras);
+  }
 
 
 

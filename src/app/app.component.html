@@ -8,9 +8,13 @@
   <a routerLink="/enfant1" routerLinkActive="active">enfant1</a>
   <a routerLink="/enfant2" routerLinkActive="active">enfant2</a>
   <a [routerLink]="['/enfant3', { id: 2 }]" routerLinkActive="active">enfant3</a> <!--passage dans url-->
-  <a [routerLink]="['/enfant4', { confs: confsParent }]" routerLinkActive="active">enfant4</a>
+  <!--<a [routerLink]="/enfant4" (click)="onTap()" routerLinkActive="active">enfant4</a>-->
+  <a (click)="onTap()">enfant4</a>
 
   <a routerLink="/enfant5" routerLinkActive="active">enfant5</a>
+
 </nav>
+
+appComp=>{{confsParent}}
 
 <router-outlet></router-outlet>

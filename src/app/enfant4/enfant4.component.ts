@@ -9,12 +9,15 @@ import {ActivatedRoute} from "@angular/router";
 export class Enfant4Component implements OnInit {
 
   test:any;
-  constructor(public route: ActivatedRoute) { }
+  constructor(public params: ActivatedRoute) { }
 
   ngOnInit() {
+    console.log(this.params);
+    /*
     this.test = this.route.snapshot.params['confs'];
     console.log(this.route.snapshot.params['confs']);
     console.log(typeof this.route.snapshot.params['confs']);
+    */
   }
 
 }
